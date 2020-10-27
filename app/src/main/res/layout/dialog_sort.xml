@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sort by"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Email"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Phone"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Created At"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/sortby"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/nameSort"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <RadioButton
+                android:id="@+id/emailSort"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/phoneSort"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/created_atSort"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/orderby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/asc"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Asc"/>
+
+        <RadioButton
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Desc"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"/>
+
+</LinearLayout>
