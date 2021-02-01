@@ -30,7 +30,7 @@ class MainPresenter @Inject constructor (val pref: PrefManager):MainContract.Pre
     var orderBy = 1
     var sortBy = 0
 //    @Inject
-//    lateinit var pref: PrefManager
+//    lateinit var pref: PrefManager //test commit
 
 
     override fun getContact() {
